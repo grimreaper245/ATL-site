@@ -1,0 +1,124 @@
+.hover-flip-item-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @media (min-width: 1200px) {
+    .hover-flip-item-wrapper {
+      opacity: 1;
+      text-align: left;
+    }
+  }
+  
+  .hover-flip-item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 1200px) {
+    .hover-flip-item span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      color: transparent;
+      -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: -o-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .hover-flip-item span:after,
+    .hover-flip-item span:before {
+      content: attr(data-text);
+      display: block;
+      position: absolute;
+      color: var(--color-heading);
+    }
+    .hover-flip-item span:before {
+      top: 0;
+      -webkit-transform: skewY(0);
+      -ms-transform: skewY(0);
+      transform: skewY(0);
+      -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transition: -webkit-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: -webkit-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: -o-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .hover-flip-item span:after {
+      top: 105%;
+      -webkit-transform: skewY(7deg);
+      -ms-transform: skewY(7deg);
+      transform: skewY(7deg);
+      -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+      transform-origin: left top;
+      -webkit-transition: -webkit-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: -webkit-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: -o-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+  
+  .hover-flip-item-wrapper:hover {
+    opacity: 1;
+  }
+  
+  .hover-flip-item-wrapper:hover .hover-flip-item span {
+    -webkit-transform: translateY(-105%);
+    -ms-transform: translateY(-105%);
+    transform: translateY(-105%);
+  }
+  
+  @media (pointer: coarse) {
+    .hover-flip-item-wrapper:hover .hover-flip-item span {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  
+  .hover-flip-item-wrapper:hover .hover-flip-item span:before {
+    -webkit-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    transform: skewY(7deg);
+  }
+  
+  @media (pointer: coarse) {
+    .hover-flip-item-wrapper:hover .hover-flip-item span:before {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  
+  .hover-flip-item-wrapper:hover .hover-flip-item span:after {
+    -webkit-transform: skewY(0);
+    -ms-transform: skewY(0);
+    transform: skewY(0);
+  }
+  
+  @media (pointer: coarse) {
+    .hover-flip-item-wrapper:hover .hover-flip-item span:after {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }

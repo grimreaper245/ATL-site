@@ -1,0 +1,84 @@
+/*-------------------------------
+    Overall HTML Specific Styles  
+    overall.scss
+---------------------------------*/
+.header-style-2 {
+    a.edu-btn.btn-medium {
+        line-height: 46px;
+    }
+    a.edu-btn.btn-medium.header-purchase-btn {
+        line-height: 50px;
+    }
+}
+
+.edu-accordion-01 .edu-accordion-item:last-child .edu-accordion-button:not(.collapsed){
+    border-bottom: 0px solid;
+}
+
+.edu-accordion-01 .edu-accordion-item:last-child .accordion-collapse.show{
+    border-bottom: 1px solid #eee;
+}
+
+.eduvibe-course-one-carousel {
+    .edu-card.card-type-3 {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0 , 0.05);
+    }
+
+    .single-slick-card {
+        margin-bottom: 20px;
+    }
+}
+
+.edu-event.event-grid-1.bg-shade .inner {
+    background: #f5f5f5;
+    background: var(--color-shade);
+    box-shadow: inherit!important;
+}
+
+.eduvibe-post-share {
+    span {
+        font-weight: 600;
+        color: var(--color-dark);
+        margin-right: 15px;
+    }
+    a {
+        color: var(--body-color);
+    }
+    a:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+.team-activation-03 .edu-instructor-3 .edu-instructor {
+    margin-bottom: 45px;
+}
+
+.team-activation-03.edu-slick-button .slick-dots {
+    bottom: -54px;
+}
+
+.instructor-profile-courses.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.edu-blog.blog-type-2.variation-2.bg-color-gray {
+    background: var(--color-shade);
+}
+
+@media (max-width: 991px) {
+    .eduvibe-masonry-grid {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}

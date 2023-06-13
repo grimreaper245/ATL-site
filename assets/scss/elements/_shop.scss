@@ -1,0 +1,131 @@
+/*-----------------------
+    Shop Style  
+------------------------*/
+
+.eduvibe-shop-single-product {
+    .inner {
+        text-align: center;
+        .eduvibe-single-product-thumb-wrapper {
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            a {
+                display: inline-block;
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                    transition: 0.4s;
+                    overflow: hidden;
+                }
+            }
+            .product-hover-info {
+                position: absolute;
+                bottom: 32px;
+                left: 0;
+                width: 100%;
+                transition: 0.4s;
+                opacity: 1;
+                z-index: 1;
+                // transform: translateZ(30px);
+                ul {
+                    @extend %liststyle;
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        position: relative;
+                        margin: 0 auto;
+                        a {
+                            width: 152px;
+                            height: 40px;
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 40px;
+                            background: var(--color-white);
+                            color: var(--color-primary);
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .eduvibe-product-popup-icon {
+                                margin-right: 4px;
+                                display: inline-flex;
+                            }
+                        }
+                        & + li {
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                background: rgba(255,255,255,0.2);
+                                width: 1px;
+                                height: 100%;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                        &:first-child {
+                            margin-bottom: 8px;
+                        }
+                        &.product-each-item-content-inner {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            padding-top: 20px;
+            .product-author {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .title {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 5px;
+            }
+            .price-list {
+                &.price-style-03 {
+                    margin: -8px;
+                    .price {
+                        margin: 8px;
+                    }
+                    .current-price {
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: var(--color-primary);
+                    }
+                    .old-price {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .inner {
+            .eduvibe-single-product-thumb-wrapper {
+                a {
+                    
+                    // img {
+                    //     transform: scale(1.1);
+                    // }
+                }
+
+                .product-hover-info {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

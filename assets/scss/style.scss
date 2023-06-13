@@ -1,0 +1,191 @@
+/*********************************************************************************
+
+	Template Name: EduVibe - Online Learning and Education Bootstrap 5 Template.
+	Note: This is style css.
+
+**********************************************************************************/
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|___ Default Styles
+	|	|
+	|	|___ Variables
+	|	|___ Mixins
+	|	|___ Reset
+	|	|___ Typography
+	|	|___ Extend
+	|	|___ Animations
+	|	|___ Shortcode
+	|	|___ Spacing
+	|	|___ Common
+	|	|___ Forms
+	|	|___ Sal
+	|
+	|___ Header Styles
+	|	|___ Header
+	|	|___ Nav
+	|	|___ Header Quote
+	|	|___ Mobilemenu
+	|	|___ Search PopUp
+	|
+	|___ Elemnts Styles
+	|	|___ Button'
+	|	|___ Brands'
+	|	|___ Section Title
+	|	|___ Section Animation
+	|	|___ Card
+	|	|___ Meta
+	|	|___ Badge
+	|	|___ Pagination
+	|	|___ Event
+	|	|___ Team
+	|	|___ Service
+	|	|___ Single Elements
+	|	|___ Course Sidebar
+	|	|___ Testimonial
+	|	|___ Feature
+	|	|___ About
+	|	|___ Newsletter
+	|	|___ Social Share
+	|	|___ Back to Top
+	|	|___ WorkShop
+	|	|___ Video PopUp
+	|	|___ Choose Us
+	|	|___ Call To Action
+	|	|___ Slick Slider
+	|	|___ Winner
+	|	|___ Counter Up
+	|	|___ Count Down
+	|	|___ Breadcrumb
+	|	|___ Masonry
+	|	|___ Accordion
+	|	|___ Privacy Policy
+	|	|___ 404
+	|	|___ Coming Soon
+	|	|___ Gallery
+	|	|___ Pricing Table
+	|	|___ Profile Details
+	|	|___ Progressbar
+	|	|___ Contact Us
+	|	|___ Shop
+	|	|___ Brand
+	|	|___ Checkout
+	|
+	|___ Blog Styles
+	|	|___ Blog Grid
+	|	|___ Sidebar
+	|	|___ Blog Details
+	|	|___ Comments
+	|
+	|___ Template Styles
+	|	|___ Banner
+	|	|___ Event Details
+	|	|___ Product Details
+	|	|___ Cart
+	|	|___ Course Details
+	|	|___ Preview
+	|	|___ Overall
+	|	
+	|___ Footer Styles
+	|	|___ Footer
+	|	|___ Copy Right
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+/**************************************
+    Default Styles
+***************************************/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/extend';
+@import 'default/animations';
+@import 'default/shortcode';
+@import 'default/spacing';
+@import 'default/common';
+@import 'default/forms';
+@import 'default/sal';
+
+/**************************************
+    Header Styles
+***************************************/
+@import 'header/header';
+@import 'header/nav';
+@import 'header/header-quote';
+@import 'header/mobilemenu';
+@import 'header/search-popup';
+
+/**************************************
+    Elemnts Styles
+***************************************/
+@import 'elements/button';
+@import 'elements/brands';
+@import 'elements/section-title';
+@import 'elements/section-animation';
+@import 'elements/card';
+@import 'elements/meta';
+@import 'elements/badge';
+@import 'elements/pagination';
+@import 'elements/event';
+@import 'elements/team';
+@import 'elements/service';
+@import 'elements/single-elements';
+@import 'elements/coursesidebar';
+@import 'elements/testimonial';
+@import 'elements/feature';
+@import 'elements/about';
+@import 'elements/newsletter';
+@import 'elements/social-share';
+@import 'elements/backtotop';
+@import 'elements/workshop';
+@import 'elements/video-popup';
+@import 'elements/chooseus';
+@import 'elements/calltoaction';
+@import 'elements/slickslider';
+@import 'elements/winner';
+@import 'elements/counterup';
+@import 'elements/countdown';
+@import 'elements/breadcrumb';
+@import 'elements/masonaryitem';
+@import 'elements/accordion';
+@import 'elements/privacy-policy';
+@import 'elements/404';
+@import 'elements/coming-soon';
+@import 'elements/gallery';
+@import 'elements/pricingtable';
+@import 'elements/profile-details';
+@import 'elements/progressbar';
+@import 'elements/contactus';
+@import 'elements/shop';
+@import 'elements/brand';
+@import 'elements/checkout';
+
+/**************************************
+    Blog Styles
+***************************************/
+@import 'blog/blog-grid';
+@import 'blog/sidebar';
+@import 'blog/blog-details';
+@import 'blog/comments';
+
+/**************************************
+    Template Styles
+***************************************/
+@import 'template/banner';
+@import 'template/event-details';
+@import 'template/product-details';
+@import 'template/cart';
+@import 'template/course-details';
+@import 'template/preview';
+@import 'template/overall';
+
+/**************************************
+    Footer Styles
+***************************************/
+@import 'footer/footer';
+@import 'footer/copyright';
