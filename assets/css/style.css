@@ -6112,7 +6112,7 @@ body.sal-disabled [data-sal|='flip'] {
   left: 0;
   right: 0;
   width: auto;
-  background: transparent;
+  background: rgb(36, 36, 36);
   backdrop-filter: inherit;
   z-index: 9; }
 
@@ -6206,7 +6206,7 @@ body.sal-disabled [data-sal|='flip'] {
   justify-content: center;
   flex-wrap: wrap; }
   .mainmenu-nav .mainmenu > li > a {
-    color: var(--color-heading);
+    color: yellow;
     font-size: 16px;
     font-weight: 600;
     padding: 0 23px;
@@ -11787,7 +11787,7 @@ button.edu-btn {
   right: 15px;
   width: 50px;
   height: 50px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
   transition: 0.3s;
